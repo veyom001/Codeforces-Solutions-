@@ -88,15 +88,7 @@ for(int i=0;i<26;i++)
 		prefix[i][j]+=prefix[i][j-1];
 	}
 }
-/*for(int i=0;i<26;i++)
-{
-	for(int j=0;j<n;j++)
-	{
-		cout<<prefix[i][j]<<" ";
-	}
-	idk
-}
-*/
+
 
 for(int i=0;i<m;i++)
 {
@@ -104,21 +96,16 @@ for(int i=0;i<m;i++)
 	start--;
 	end--;
 
-ll ans=0;
-
-
+		ll ans=0;
 		for(int j=0;j<26;j++)
 		{
 			ll cnt;
-			
 				if(start==0)
 				{
 					cnt=prefix[j][end];
 				}
 				else
 			 cnt=prefix[j][end]-prefix[j][start-1];
-		
-			//debug(prefix[j][end],prefix[j])
 
 			ans+=cnt*(j+1);
 
