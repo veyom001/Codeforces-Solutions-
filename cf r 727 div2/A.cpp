@@ -66,7 +66,6 @@ template <typename num_t>
 using ordered_set = tree<num_t, null_type, less<num_t>, rb_tree_tag, tree_order_statistics_node_update>;
 
 
-/*
 
 void solve()
 {
@@ -109,40 +108,3 @@ int main()
     }
 }
 
-
-*/
-
-
-
-
-int main()
-{
-    // Ordered set declared with name o_set
-    ordered_set<int>o_set;
-  
-    // insert function to insert in
-    // ordered set same as SET STL
-int n;
-cin>>n;
-
-for(int i=0;i<n;i++)
-{ci(j)
-    o_set.insert(j);
-}
-
-ci(q)
-
-for(int i=0;i<q;i++)
-{
-    ci(j)
-    cout<<*(o_set.find_by_order(j))<<endl;
-}
-  
-    // Finding the second smallest element
-    // in the set using * because
-    //  find_by_order returns an iterator
-    
-
-  
-    return 0;
-}
